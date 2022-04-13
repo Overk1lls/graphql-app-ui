@@ -28,7 +28,8 @@
   text-align: center;
 }
 
-.navbar, .footer-copyright {
+.navbar,
+.footer-copyright {
   color: #fff;
   background-color: #343434;
 }

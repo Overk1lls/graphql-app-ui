@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { InMemoryCache, HttpLink, ApolloProvider } from '@apollo/client';
 import { ApolloClientService } from './services/apollo-client.service';
 import { CachePersistorService } from './services/cache.service';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import { NotFound } from './components/not-found';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Menu } from './components/menu/menu';
+import { Footer } from './components/footer/footer';
+import { AppRoutes } from './components/routes';
 import './styles/App.css';
-import { Footer } from './components/footer';
-import { Menu } from './components/menu';
 
 const GRAPHQL_URL = 'http://localhost:4000/graphql';
 
@@ -36,9 +36,7 @@ function App() {
       <ApolloProvider client={apolloClient.client}>
         <Menu />
         <Router>
-          <Routes>
-            <Route path='*' element={<NotFound />} />
-          </Routes>
+          <AppRoutes />
         </Router>
         <Footer />
       </ApolloProvider>
