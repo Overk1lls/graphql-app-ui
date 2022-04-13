@@ -1,35 +1,35 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .text-center {
-  margin: 25px 5px 5px 5px;
+    margin: 25px 5px 5px 5px;
 }
 
 .main {
-  padding-top: 90px;
+    padding-top: 90px;
 }
 
 .nav-item {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .btn-outline-dark {
-  color: #fff;
-  border-color: #fff;
+    color: #fff;
+    border-color: #fff;
 }
 
 .btn-outline-dark:hover {
-  background-color: hsl(0, 2%, 12%);
-  border-color: #fff;
+    background-color: hsl(0, 2%, 12%);
+    border-color: #fff;
 }
 
 .footer-copyright {
-  text-align: center;
+    text-align: center;
 }
 
 .navbar,
 .footer-copyright {
-  color: #fff;
-  background-color: #343434;
+    color: #fff;
+    background-color: #343434;
 }

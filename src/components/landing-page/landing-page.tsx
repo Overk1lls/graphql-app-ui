@@ -1,8 +1,14 @@
 import React from 'react';
+import { ContentChart } from './contents/chart';
+import { ContentTable } from './contents/content-table';
+import { CallToAction } from './contents/cta';
 import { UserTable } from './user-table/user-table';
 
 export const LandingPage = () => (
-  <>
-    <UserTable />
-  </>
+    <>
+        <UserTable />
+        <ContentTable />
+        <ContentChart />
+        <CallToAction />
+    </>
 );
