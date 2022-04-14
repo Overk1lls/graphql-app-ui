@@ -12,6 +12,7 @@ const GRAPHQL_URL = 'http://localhost:4000/graphql';
 
 function App() {
     const [apolloClient, setApolloClient] = useState<ApolloClientService>();
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [cachePersistor, setCachePersistor] = useState<CachePersistorService>();
 
     useEffect(() => {
@@ -23,8 +24,8 @@ function App() {
 
             await cachePersistor.restore();
 
-            setCachePersistor(cachePersistor);
             setApolloClient(apolloClient);
+            setCachePersistor(cachePersistor);
         };
         init().catch((err) => console.error(err));
     }, []);

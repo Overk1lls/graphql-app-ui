@@ -33,10 +33,10 @@ export const Table = ({ count, users }: TableProps) => {
             pageCount: Math.ceil(count / paginationSettings.pageMax),
         });
 
-        setTable(<TableWrapper users={users} />);
+        setTable(<TableWrapper users={usersSlice} />);
     };
 
-    useEffect(() => formTable(), []);
+    useEffect(formTable, [paginationSettings, count, users]);
 
     const handlePageChange = (e: { selected: number }) => {
         const selectedPage = e.selected;
@@ -47,7 +47,6 @@ export const Table = ({ count, users }: TableProps) => {
             page: selectedPage,
             pageOffset: offset,
         });
-        formTable();
     };
 
     return (

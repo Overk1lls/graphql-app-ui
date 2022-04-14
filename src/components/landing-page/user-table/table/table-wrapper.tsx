@@ -18,7 +18,7 @@ export const TableWrapper = ({ users }: { users: IStudent[] }) => (
                 <tr key={user.id}>
                     <td>{user.id}</td>
                     <td>
-                        <Link to={`/user/${user.username}`}>{user.name}</Link>
+                        <Link to={`/users/${user.username}`}>{user.name}</Link>
                     </td>
                     <td>{user.username}</td>
                     <td>{user.problems}</td>

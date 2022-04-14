@@ -1,4 +1,5 @@
 import React from 'react';
+import './footer.css';
 
 export const Footer = () => (
     <footer className="footer-copyright py-3 fixed-bottom">

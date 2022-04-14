@@ -9,27 +9,3 @@
 .main {
     padding-top: 90px;
 }
-
-.nav-item {
-    margin-left: 10px;
-}
-
-.btn-outline-dark {
-    color: #fff;
-    border-color: #fff;
-}
-
-.btn-outline-dark:hover {
-    background-color: hsl(0, 2%, 12%);
-    border-color: #fff;
-}
-
-.footer-copyright {
-    text-align: center;
-}
-
-.navbar,
-.footer-copyright {
-    color: #fff;
-    background-color: #343434;
-}

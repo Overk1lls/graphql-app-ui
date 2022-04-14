@@ -3,7 +3,7 @@ import { ContentChart } from './contents/chart';
 import { ContentTable } from './contents/table';
 import { CallToAction } from './contents/cta';
 import { UserTable } from './user-table/user-table';
-import { useRoutes } from 'react-router-dom';
+import './landing-page.css';
 
 export const LandingPage = () => (
     <>
