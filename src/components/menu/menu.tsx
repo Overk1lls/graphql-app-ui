@@ -1,14 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink, useNavigate } from 'react-router-dom';
 
-export const Menu = () => (
-    <Router>
+export const Menu = () => {
+    // const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        // navigate('/');
+    };
+
+    return (
         <header className="fixed-top">
             <nav className="navbar navbar-expand-lg navbar-dark">
                 <div className="container">
-                    <Link className="navbar-brand" to={'/'}>
+                    <NavLink className="navbar-brand" to="/">
                         SSU E-Olymp Students
-                    </Link>
+                    </NavLink>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -23,14 +29,14 @@ export const Menu = () => (
                     <div className="collapse navbar-collapse" id="navbar-nav">
                         <ul className="navbar-nav mr-auto mb-3 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link" to={'/'}>
+                                <NavLink className="nav-link" to="/">
                                     Home
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to={'/about-us'}>
+                                <NavLink className="nav-link" to="/about-us">
                                     About Us
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
                                 <a
@@ -53,5 +59,5 @@ export const Menu = () => (
                 </div>
             </nav>
         </header>
-    </Router>
-);
+    );
+};

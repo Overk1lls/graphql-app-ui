@@ -34,9 +34,11 @@ function App() {
     return (
         <div className="container main">
             <ApolloProvider client={apolloClient.client}>
-                <Menu />
-                <Router children={<AppRoutes />} />
-                <Footer />
+                <Router>
+                    <Menu />
+                    <AppRoutes />
+                    <Footer />
+                </Router>
             </ApolloProvider>
         </div>
     );

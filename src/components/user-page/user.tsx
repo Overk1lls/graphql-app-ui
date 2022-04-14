@@ -1,15 +1,16 @@
 import { useQuery } from '@apollo/client';
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import { PageResponse } from '../../lib/config';
 import { IStudent } from '../../lib/interfaces/student.interface';
 import { STUDENT_QUERY } from '../../lib/queries';
 import { Chart } from './chart';
 
 export const User = () => {
+    const { id } = useParams();
+
     const { loading, data, error } = useQuery(STUDENT_QUERY, {
-        variables: {
-            username: window.location.pathname.split('/')[2],
-        },
+        variables: { username: id },
     });
     const { getStudentByUsername: student }: { getStudentByUsername: IStudent } = data;
 
