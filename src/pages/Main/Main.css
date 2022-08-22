@@ -1,0 +1,47 @@
+.content ul li {
+  list-style-type: none;
+}
+
+.content p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+img {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.bi {
+  margin-right: 10px;
+}
+
+.cta {
+  padding-bottom: 100px;
+}
+
+.cta-btn {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border: 2px solid #343434;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+.cta-btn:hover {
+  background-color: antiquewhite;
+  color: brown;
+}
+
+.table,
+.cta,
+.row {
+  padding-top: 60px;
+}
+
+.pagination {
+  padding-top: 25px;
+}

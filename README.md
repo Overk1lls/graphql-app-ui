@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# GraphQL Pet UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\
+This is the front-end part of the full-stack application. There you can check the [back-end side](https://github.com/Overk1lls/nestjs-graphql-pet).\
+This is an educational project to test the skills in React, GraphQL, Apollo, NestJS.
 
 ## Available Scripts
 
